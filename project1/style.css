@@ -1,0 +1,142 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #ffffff; /* Light background color */
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 450px;
+    padding: 25px 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-in-out;
+    border: 2px solid gray;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  h2 {
+    text-decoration: underline;
+    text-shadow: 2px 2px rgb(191, 187, 187);
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; /* Modern font */
+    font-size: 24px; /* Larger font size for emphasis */
+    font-weight: 600; /* Slightly bold */
+    color: #000000; /* White text for contrast on gradient background */
+  }
+  
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    display: block;
+    font-size: 14px;
+    color: #3a3a3a;
+    margin-bottom: 5px;
+  }
+  
+  .form-group i {
+    margin-right: 8px;
+    color: #0077cc; /* Paytm blue for icons */
+  }
+  
+  .form-group input[type="text"],
+  .form-group input[type="email"],
+  .form-group input[type="tel"],
+  .form-group input[type="password"],
+  .form-group input[type="month"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #d1e4ff;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+    background-color: #f7faff; /* Light blue background inside input fields */
+  }
+  
+  .form-group input[type="text"]:focus,
+  .form-group input[type="email"]:focus,
+  .form-group input[type="tel"]:focus,
+  .form-group input[type="password"]:focus,
+  .form-group input[type="month"]:focus {
+    border-color: #0077cc; /* Border color on focus */
+    outline: none;
+    box-shadow: 0 0 8px rgba(0, 119, 204, 0.2);
+  }
+  
+  .radio-group label {
+    display: inline-flex;
+    align-items: center;
+    font-size: 14px;
+    color: #3a3a3a;
+    margin-right: 15px;
+  }
+  
+  .radio-group input[type="radio"] {
+    margin-right: 5px;
+  }
+  
+  .form-row {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .half-width {
+    width: 48%;
+  }
+  
+  .checkbox-group {
+    margin-top: 20px;
+  }
+  
+  .checkbox-group label {
+    font-size: 14px;
+    color: #3a3a3a;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  button[type="submit"] {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: #0077cc; /* Primary Paytm blue */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 119, 204, 0.3);
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #005bb5; /* Darker blue on hover */
+    box-shadow: 0 6px 12px rgba(0, 119, 204, 0.4);
+  }
+  
+  button[type="submit"]:active {
+    transform: scale(0.98);
+  }
+  
